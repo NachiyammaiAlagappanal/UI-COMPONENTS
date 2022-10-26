@@ -1,5 +1,5 @@
 const seed = {
-	count: 0,
+	value: 0,
 };
 
 export default seed;
