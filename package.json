@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fluentui/react": "^8.98.7",
     "@laufire/resist": "^0.0.5",
     "@laufire/utils": "^2.9.2",
     "react": "^17.0.2",

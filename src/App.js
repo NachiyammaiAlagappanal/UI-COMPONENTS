@@ -1,9 +1,16 @@
 import { React } from 'react';
 import './App.scss';
+import ComboSelect from './Component/ComboBox';
+import Button from './Component/DefaultButton';
 
-const App = () =>
-	<div className="App" role="App">
-		Ready to start.
+const App = (context) => {
+	const { state: { count }} = context;
+
+	return <div className="App" role="App">
+		<div>Clicked: { count }</div>
+		<Button { ...context }/>
+		<ComboSelect/>
 	</div>;
+};
 
 export default App;
