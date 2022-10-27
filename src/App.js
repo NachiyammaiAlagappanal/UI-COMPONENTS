@@ -2,28 +2,27 @@ import { React } from 'react';
 import './App.scss';
 import { Box } from '@mui/material';
 import MenuBar from './component/MenuBar';
-
 import MaterialUI from './component/MaterialUI';
 import FluentUI from './component/FluentUI';
 import Header from './component/Header';
-import TabPanel from './component/TabPanel';
+import { TabContext, TabPanel } from '@mui/lab';
 
 const App = (context) => {
 	const { state: { value }} = context;
 
-	return <Box className="App" role="App">
-		<Box sx={ { display: 'flex' } }>
+	return <Box className="App">
+		<TabContext value={ value }>
 			<MenuBar { ...context }/>
 			<Box width="100%">
 				<Header/>
-				<TabPanel value={ value } index={ 0 }>
+				<TabPanel value="1">
 					<MaterialUI { ...context }/>
 				</TabPanel>
-				<TabPanel value={ value } index={ 1 }>
+				<TabPanel value="2">
 					<FluentUI { ...context }/>
 				</TabPanel>
 			</Box>
-		</Box>
+		</TabContext>
 	</Box>;
 };
 

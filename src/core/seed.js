@@ -1,5 +1,5 @@
 const seed = {
-	value: 0,
+	value: '1',
 	slider: 50,
 	selected: false,
 	fruit: 'Apple',

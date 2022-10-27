@@ -1,5 +1,5 @@
 .App {
-	text-align: center;
+	display: flex;
 
 	button {
 		font-weight: bold;
@@ -9,6 +9,11 @@
 .center{
 	color: #1976d2 ;
 	background-color: white;
-	text-align: center ;
 	font-weight: bolder;
+}
+
+.toolbar{
+	background-color: #1976d2;
+	color: white;
+	height: 100vh;
 }
