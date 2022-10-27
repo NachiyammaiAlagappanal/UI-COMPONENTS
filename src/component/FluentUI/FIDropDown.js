@@ -1,17 +1,15 @@
 import { React } from 'react';
 import { Dropdown } from '@fluentui/react';
 
-const options = [
-	{ text: 'Apple' },
-	{ text: 'orange' },
-	{ text: 'Mango' },
-];
+const FIDropDown = (context) => {
+	const { config: { options }} = context;
 
-const FIDropDown = () =>
-	<Dropdown
-		placeholder="Select an option"
-		label="DropDown"
-		options={ options }
-	/>;
+	return (
+		<Dropdown
+			placeholder="Select an option"
+			label="DropDown"
+			options={ options }
+		/>);
+};
 
 export default FIDropDown;

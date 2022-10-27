@@ -12,7 +12,7 @@ const FluentUI = (context) =>
 	><FIButton/>
 		<FISlider { ...context }/>
 		<FICheckBox { ...context }/>
-		<FIDropDown/>
+		<FIDropDown { ...context }/>
 		<FITextField/></Box>;
 
 export default FluentUI;

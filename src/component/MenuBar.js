@@ -7,12 +7,8 @@ const MenuBar = (context) =>
 	<Toolbar className="toolbar">
 		<TabList
 			orientation="vertical"
-			onChange={ (event, tabIndex) => {
-				// eslint-disable-next-line no-console
-				console.log(tabIndex);
-				return context.actions
-					.toggleMenu(tabIndex);
-			} }
+			onChange={ (event, tabIndex) => context.actions
+				.toggleMenu(tabIndex) }
 			textColor="inherit"
 		>
 			<Tab value="1" label="MATERIAL UI"/>
